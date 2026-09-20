@@ -24,7 +24,7 @@ USER root
 COPY entrypoint.sh /railway-entrypoint.sh
 RUN chmod 0755 /railway-entrypoint.sh
 
-EXPOSE 5433
+EXPOSE 5432
 
 ENTRYPOINT ["/railway-entrypoint.sh"]
 CMD ["postgres"]
